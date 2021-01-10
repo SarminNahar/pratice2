@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .scrol{
+            width: 400px;
+            height: 100px;
+            border: 1px solid indianred;
+            overflow:scroll;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .outer{
+            background-color: indigo;
+        }
+        .inner{
+            background-color: lightcoral;
+            transform: scale(.60) rotate(35deg);
+            transition:transform 30s ease 2s ;
+        }
+        .box:hover{
+            transform: scale(.10) rotate(20deg);
+        }
+        .box2{
+            width:250px;
+            height: 250px;
+            border: 1px solid gray;
+            background-color: darkgray;
+            transition: background-color 10s ease 1s;
+        }
+        .box2:hover{
+            background-color: rgb(250, 7, 7);
+        }
+        img{
+            height:25%;
+            width: 25%;
+        }
+        .bat:hover{
+            transform: rotate(-60deg);
+            transform-origin: 100% 0%;
+        }
+        .bat{
+            transition: transform 0.2s ease ;
+        }
+        .ball{
+            width: 50px;
+            height:50px;
+            border-radius: 30px;
+            background-color: red;
+            position: relative;
+            left:300px;
+            transition:transform 2s ease 0.3s;
+        }
+        .fild:hover .ball{
+            transform: translate(1000px, -250px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="scrol">
+        <h1>SCROLL :</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nam esse? Similique excepturi, eius, accusantium culpa consequatur adipisci reiciendis, aperiam enim corrupti commodi odio dicta sint? Quidem recusandae animi voluptatum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi velit sed deleniti voluptates non? Ratione, at! Modi ipsam repudiandae aspernatur consequatur tempore, veritatis eaque odio similique, repellendus reprehenderit cupiditate non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam velit veritatis animi illum vero dolorem rem sint quas fugit, nisi asperiores cupiditate doloribus facilis maiores voluptas neque, blanditiis necessitatibus ea!</p>
+    </div>
+    <h1>TRANSFORM + TRANSITION :</h1>
+    <div class="box outer">
+        <div class="box inner">
+
+        </div>
+    </div>
+</div>
+<div class="box outer">
+    <div class="box inner">
+
+    </div>
+</div>
+</div>
+<div class="box outer">
+    <div class="box inner">
+
+    </div>
+</div>
+
+<div class="box2">
+    <h1>Transition</h1>
+</div>
+<div class="fild">
+<img  class="bat" src="bat.png" alt="">
+<div class="ball"></div>
+
+</div>
+
+</body>
+</html>
